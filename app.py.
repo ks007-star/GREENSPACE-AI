@@ -1,0 +1,43 @@
+import streamlit as st
+
+# GreenSpace AI - Main Application
+
+st.set_page_config(
+    page_title="GreenSpace AI",
+    page_icon="🌱",
+    layout="wide"
+)
+
+st.title("🌱 GreenSpace AI")
+
+st.subheader("Your Space. Your Climate. Your Garden.")
+
+st.write(
+    "Welcome to your personal smart gardening assistant!"
+)
+
+st.divider()
+
+st.header("📍 Select Your Location")
+
+location = st.selectbox(
+    "Choose your city",
+    ["Coimbatore", "Chennai", "Salem", "Madurai", "Tiruchirappalli"]
+)
+
+st.success(f"Selected Location: {location}")
+
+st.header("🌿 What would you like to grow?")
+
+category = st.selectbox(
+    "Select plant category",
+    ["Vegetables", "Fruits", "Herbs", "Flowering Plants", "Indoor Plants"]
+)
+
+st.write(f"You selected: {category}")
+
+st.divider()
+
+st.info("More smart gardening features coming soon!")
+
+st.caption("GreenSpace AI | Climate-Smart Gardening")
